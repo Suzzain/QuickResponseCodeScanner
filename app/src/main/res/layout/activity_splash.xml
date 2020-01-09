@@ -11,9 +11,9 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
+        android:layout_width="315dp"
+        android:layout_height="352dp"
         android:layout_gravity="center"
-        android:src="@drawable/qr"/>
+        android:src="@drawable/qr" />
 
 </LinearLayout>
