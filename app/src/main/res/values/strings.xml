@@ -110,5 +110,9 @@
     <string name="toast_erorr">An error had occur</string>
     <string name="error_text_first">First type in some Text</string>
     <string name="error_generate">No valid input for this format</string>
+    <string name="error_add_to_database">Was not able to add QR-Code to the history</string>
+    <string name="error_file_not_found">File not found</string>
+    <string name="error_code_not_found">Barcode/Qr-Code not found</string>
+    <string name="error_canceled_scan">You canceled the scanning</string>
 
 </resources>
