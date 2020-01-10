@@ -226,7 +226,7 @@ public class MainActivity extends AppCompatActivity {
         switch(item.getItemId()){
             case R.id.about:
                 AboutDialog aboutDialog = new AboutDialog(this);
-                aboutDialog.setTitle(R.string.about_dialog);
+                aboutDialog.setTitle("About");
                 aboutDialog.show();
                 return true;
             case R.id.settings:

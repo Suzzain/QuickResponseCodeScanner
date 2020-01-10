@@ -105,7 +105,7 @@
 
 
     <string name="btn_save">Save</string>
-    <string name="toast_save">Saved in "SecScanQR" folder on the internal storage</string>
+    <string name="toast_save">Saved in folder on the internal storage</string>
     <string name="toast_permission_needed">Permission is needed</string>
     <string name="toast_erorr">An error had occur</string>
     <string name="error_text_first">First type in some Text</string>
@@ -114,5 +114,8 @@
     <string name="error_file_not_found">File not found</string>
     <string name="error_code_not_found">Barcode/Qr-Code not found</string>
     <string name="error_canceled_scan">You canceled the scanning</string>
+    <string name="github_link">Find codes on Github: https://github.com/Suzzain/QuickResponseCodeScanner.git</string>
+    <string name="license">This App was created under the terms of the GNU General Public License. For more information please check out the link below: https://www.gnu.org/licenses/gpl-3.0.en.html</string>
+    <string name="zxing_license">The App uses the ZXING Library which is under the Apache 2.0 license. For more information please check out the link below: http://www.apache.org/licenses/LICENSE-2.0</string>
 
 </resources>
