@@ -16,6 +16,10 @@
     <string name="xzing_label">Use the volume keys to activate the flashlight.</string>
     <string name="share_database">Share</string>
     <string name="reset_database">Reset</string>
-
+    <string name="delete_history_dialog_message">All entries will be deleted!</string>
+    <string name="delete_history_dialog_confirmation">OK</string>
+    <string name="delete_history_dialog_cancel">Cancel</string>
+    <string name="error_not_in_database">Was not found in the history database</string>
+    <string name="error_sqlexception">This format is not supported for the history feature</string>
 
 </resources>
