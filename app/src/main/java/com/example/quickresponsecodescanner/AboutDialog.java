@@ -36,7 +36,7 @@ public class AboutDialog extends Dialog {
         PackageInfo packageInfo;
         try {
             packageInfo = getContext().getPackageManager().getPackageInfo(packageName, PackageManager.GET_ACTIVITIES);
-            String appInfo = "SecScanQR";
+            String appInfo = "Quick Response Code Scanner ";
             String versionInfo = "Version " +
                     packageInfo.versionName + " (Build " +
                     Integer.toString(packageInfo.versionCode) + ")";

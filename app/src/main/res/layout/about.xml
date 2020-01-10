@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="end|center"
             android:text="Version"
-            android:textColor="?attr/textcolor" />
+             />
     </TableRow>
     <TableRow>
 
@@ -38,7 +38,6 @@
             android:layout_span="2"
             android:autoLink="web"
             android:text="@string/github_link"
-            android:textColor="?attr/textcolor"
             android:textSize="12sp"
             android:textStyle="italic" />
     </TableRow>
@@ -52,7 +51,6 @@
             android:layout_span="2"
             android:autoLink="web"
             android:text="@string/license"
-            android:textColor="?attr/textcolor"
             android:textSize="12sp"
             android:textStyle="italic" />
     </TableRow>
@@ -65,7 +63,6 @@
                 android:layout_span="2"
                 android:autoLink="web"
                 android:text="@string/zxing_license"
-                android:textColor="?attr/textcolor"
                 android:textSize="12sp"
                 android:textStyle="italic" />
         </TableRow>

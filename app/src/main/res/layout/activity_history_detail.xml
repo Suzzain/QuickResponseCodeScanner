@@ -33,8 +33,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:background="?attr/bottomnavcolor"
         app:itemIconTint="@color/colorAccent"
         app:itemTextColor="@color/colorAccent"
-        app:menu="@menu/history_navigation" />
+        app:menu="@menu/history_navigation"
+        app:labelVisibilityMode="labeled"/>
 </LinearLayout>

@@ -106,7 +106,6 @@ public class SettingActivity extends AppCommpatPreference {
             bindPreferenceSummaryToValue(findPreference("pref_camera"));
             bindPreferenceSummaryToValue(findPreference("pref_auto_scan"));
             bindPreferenceSummaryToValue(findPreference("pref_auto_clipboard"));
-            bindPreferenceSummaryToValue(findPreference("pref_day_night_mode"));
 
         }
 
