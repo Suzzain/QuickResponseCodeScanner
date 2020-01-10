@@ -2,13 +2,17 @@ package com.example.quickresponsecodescanner;
 
 import android.annotation.TargetApi;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Build;
 import android.os.Bundle;
 import android.preference.ListPreference;
 import android.preference.Preference;
+import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
+import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBar;
+import android.view.MenuItem;
 import android.view.WindowManager;
 
 import java.util.List;
@@ -82,5 +86,93 @@ public class SettingActivity extends AppCommpatPreference {
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     public void onBuildHeaders(List<Header> target) {
         loadHeadersFromResource(R.xml.pref_headers, target);
+    }
+
+    protected boolean isValidFragment(String fragmentName) {
+        return PreferenceFragment.class.getName().equals(fragmentName)
+                || ScannerPreferenceFragment.class.getName().equals(fragmentName)
+                || HistoryPreferenceFragment.class.getName().equals(fragmentName)
+                || SearchEnginePreferenceFragment.class.getName().equals(fragmentName);
+    }
+
+    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
+    public static class ScannerPreferenceFragment extends PreferenceFragment {
+        @Override
+        public void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            addPreferencesFromResource(R.xml.pref_scanner);
+            setHasOptionsMenu(true);
+
+            bindPreferenceSummaryToValue(findPreference("pref_camera"));
+            bindPreferenceSummaryToValue(findPreference("pref_auto_scan"));
+            bindPreferenceSummaryToValue(findPreference("pref_auto_clipboard"));
+            bindPreferenceSummaryToValue(findPreference("pref_day_night_mode"));
+
+        }
+
+        @Override
+        public boolean onOptionsItemSelected(MenuItem item) {
+            int id = item.getItemId();
+            if (id == android.R.id.home) {
+                startActivity(new Intent(getActivity(), SettingActivity.class));
+                return true;
+            }
+            return super.onOptionsItemSelected(item);
+        }
+    }
+
+    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
+    public static class HistoryPreferenceFragment extends PreferenceFragment {
+        @Override
+        public void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            addPreferencesFromResource(R.xml.pref_history_settings);
+            setHasOptionsMenu(true);
+            bindPreferenceSummaryToValue(findPreference("pref_history"));
+        }
+
+        @Override
+        public boolean onOptionsItemSelected(MenuItem item) {
+            int id = item.getItemId();
+            if (id == android.R.id.home) {
+                startActivity(new Intent(getActivity(), SettingActivity.class));
+                return true;
+            }
+            return super.onOptionsItemSelected(item);
+        }
+    }
+
+    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
+    public static class SearchEnginePreferenceFragment extends PreferenceFragment {
+        @Override
+        public void onCreate(@Nullable Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            addPreferencesFromResource(R.xml.pref_search_engine);
+            setHasOptionsMenu(true);
+            bindPreferenceSummaryToValue(findPreference("pref_search_engine"));
+            bindPreferenceSummaryToValue(findPreference("pref_barcode_search_engine"));
+        }
+
+        @Override
+        public boolean onOptionsItemSelected(MenuItem item) {
+            int id = item.getItemId();
+            if (id == android.R.id.home) {
+                startActivity(new Intent(getActivity(), SettingActivity.class));
+                return true;
+            }
+            return super.onOptionsItemSelected(item);
+        }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            // Respond to the action bar's Up/Home button
+            case android.R.id.home:
+                super.onBackPressed();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+
     }
 }
