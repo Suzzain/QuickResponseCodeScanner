@@ -18,6 +18,11 @@ import utils.BottomNavigationViewHelper;
 import utils.DatabaseHelper;
 import utils.GeneralHandler;
 
+import static utils.ButtonHandler.copyToClipboard;
+import static utils.ButtonHandler.createContact;
+import static utils.ButtonHandler.openInWeb;
+import static utils.ButtonHandler.shareTo;
+
 public class HistoryDetailActivity extends AppCompatActivity {
     private static final String TAG = "EditDataActivity";
     private GeneralHandler generalHandler;
@@ -96,5 +101,5 @@ public class HistoryDetailActivity extends AppCompatActivity {
         }
 
     }
-    }
+
 }

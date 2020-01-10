@@ -22,6 +22,8 @@ import utils.DatabaseHelper;
 import utils.GeneralHandler;
 import utils.HistoryListAdapter;
 
+import static utils.ButtonHandler.shareTo;
+
 public class HistoryActivity extends AppCompatActivity {
     private static final String TAG = "History";
     DatabaseHelper historyDatabaseHelper;
