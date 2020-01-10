@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">QuickResponseCodeScanner</string>
+    <string name="app_name">Quick Response Code Scanner</string>
     <string name="text_format">Code Format:</string>
     <string name="info">Code Information:</string>
     <string name="default_text">Click on Scan to launch scanner</string>
@@ -12,6 +12,7 @@
     <string name="history">History</string>
     <string name="settings">Settings</string>
     <string name="about">About</string>
+    <string name="xzing_label">Use the volume keys to activate the flashlight.</string>
 
 
 </resources>
