@@ -5,7 +5,7 @@
     <string name="default_text">Click on Scan to launch scanner</string>
     <string name="copy">Copy</string>
     <string name="openInWeb">Open In Web</string>
-    <string name="createContact">Create Contact</string>
+    <string name="createContact">Create</string>
     <string name="share">Share</string>
     <string name="reset">Reset</string>
     <string name="delete">Delete</string>
@@ -105,7 +105,7 @@
 
 
     <string name="btn_save">Save</string>
-    <string name="toast_save">Saved in folder on the internal storage</string>
+    <string name="toast_save">Saved in "QR" folder on the internal storage</string>
     <string name="toast_permission_needed">Permission is needed</string>
     <string name="toast_erorr">An error had occur</string>
     <string name="error_text_first">First type in some Text</string>
